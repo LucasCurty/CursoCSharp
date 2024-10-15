@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 namespace CursoCSharp.Fundamentos {
     internal class NotacaoPonto {
         public static  void Executar() {
-            Console.WriteLine("ON PONT");
+            string nome = "Olá mundo".ToUpper();
+            Console.WriteLine(nome);
+            Console.WriteLine($"O {nome} tem {nome.Length} letras");
+
+            string nullName = null;
+            Console.WriteLine(nullName?.Length);
         }
     }
 }
